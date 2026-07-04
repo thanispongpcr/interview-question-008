@@ -1,0 +1,67 @@
+.page-container {
+  width: 600px;
+  margin: 40px auto;
+  border: 1px solid #999;
+  min-height: 500px;
+  background: #fff;
+}
+
+.page-header {
+  background: #00a651;
+  color: #000;
+  text-align: center;
+  padding: 6px;
+  font-weight: bold;
+
+  h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+.form-area {
+  width: 420px;
+  margin: 80px auto 0 auto;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+
+  label {
+    width: 90px;
+    font-weight: bold;
+  }
+
+  input {
+    flex: 1;
+    height: 24px;
+    border: 1px solid #777;
+    padding: 2px 6px;
+  }
+}
+
+.button-area {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.btn-save {
+  background: #337ab7;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  margin-right: 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn-cancel {
+  background: red;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 3px;
+  cursor: pointer;
+}

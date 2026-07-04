@@ -1,0 +1,47 @@
+<div class="page-container">
+  <div class="page-header">
+    <h2>IT 08-1</h2>
+  </div>
+
+  <button class="btn-add" type="button" (click)="goToCreate()">
+    เพิ่มข้อสอบ
+  </button>
+
+  @if (questions.length === 0) {
+    <p class="empty-text">ยังไม่มีข้อมูลข้อสอบ</p>
+  }
+
+  @for (question of questions; track question.id) {
+    <div class="question-card">
+      <div class="question-title">
+        <span>{{ question.number }}. {{ question.questionText }}</span>
+
+        <button class="btn-delete" type="button" (click)="deleteQuestion(question.id)">
+          ลบ
+        </button>
+      </div>
+
+      <div class="choices">
+        <label>
+          <input type="radio" disabled />
+          {{ question.choice1 }}
+        </label>
+
+        <label>
+          <input type="radio" disabled />
+          {{ question.choice2 }}
+        </label>
+
+        <label>
+          <input type="radio" disabled />
+          {{ question.choice3 }}
+        </label>
+
+        <label>
+          <input type="radio" disabled />
+          {{ question.choice4 }}
+        </label>
+      </div>
+    </div>
+  }
+</div>

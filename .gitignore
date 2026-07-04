@@ -1,0 +1,51 @@
+# =========================
+# VS Code / IDE
+# =========================
+.vscode/
+.vs/
+.idea/
+
+# =========================
+# Angular / Frontend
+# =========================
+frontend/exam-web/node_modules/
+frontend/exam-web/dist/
+frontend/exam-web/.angular/cache/
+
+# Angular local environment
+frontend/exam-web/src/environments/environment.ts
+!frontend/exam-web/src/environments/environment.example.ts
+
+# =========================
+# .NET / Backend
+# =========================
+backend/Tcc.Exam.Api/bin/
+backend/Tcc.Exam.Api/obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# =========================
+# Backend local settings / secrets
+# =========================
+backend/Tcc.Exam.Api/appsettings.Local.json
+backend/Tcc.Exam.Api/appsettings.Production.json
+backend/Tcc.Exam.Api/.env
+backend/Tcc.Exam.Api/.env.*
+
+# =========================
+# Logs
+# =========================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# System files
+# =========================
+.DS_Store
+Thumbs.db

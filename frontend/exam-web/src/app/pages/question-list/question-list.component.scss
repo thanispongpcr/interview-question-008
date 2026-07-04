@@ -1,0 +1,63 @@
+.page-container {
+  width: 600px;
+  margin: 40px auto;
+  border: 1px solid #999;
+  min-height: 500px;
+  background: #fff;
+}
+
+.page-header {
+  background: #00a651;
+  color: #000;
+  text-align: center;
+  padding: 6px;
+  font-weight: bold;
+
+  h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+.btn-add {
+  margin: 30px 0 20px 40px;
+  background: #5cb85c;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.question-card {
+  margin: 0 40px 20px 40px;
+}
+
+.question-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.btn-delete {
+  background: red;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-left: 16px;
+}
+
+.empty-text {
+  margin-left: 40px;
+  color: #777;
+}
