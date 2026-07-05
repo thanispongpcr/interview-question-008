@@ -41,5 +41,8 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5068";
+app.Urls.Add($"http://0.0.0.0:{port}");
+
 app.Run();
 
